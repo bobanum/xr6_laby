@@ -1,0 +1,42 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+}
+
+div.interface {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	& > header {
+		background-color: black;
+		color: white;
+		text-align: center;
+	}
+	& > div.body {
+		flex: 1 1 0px;
+		padding: .5em;
+		background-color: #999;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+#grille {
+	table {
+		border-collapse: collapse;
+		background-color: rgb(245, 222, 179);
+	}
+	td {
+		font-size: 16px;
+		padding: 0;
+		background-image: url(murs.png);
+		width: 64px;
+		height: 64px;
+		text-align: center;
+	}
+}
